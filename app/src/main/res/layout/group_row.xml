@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+    <TextView android:id="@+id/row_name"
+        android:paddingLeft="50px"
+        android:textColor="@drawable/blue"
+        android:textStyle="bold"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_weight="0.80" />
+
+</LinearLayout>
