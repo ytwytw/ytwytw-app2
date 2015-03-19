@@ -15,8 +15,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".XYPlotActivity"
-            android:label="Plot"></activity>
 
     </application>
 
