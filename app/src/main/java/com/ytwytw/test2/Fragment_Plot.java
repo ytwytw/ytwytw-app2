@@ -23,7 +23,7 @@ public class Fragment_Plot extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.simple_xy_plot, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_plot, container, false);
         // initialize our XYPlot reference:
         // initialize our XYPlot reference:
         plot = (XYPlot) rootView.findViewById(R.id.mySimpleXYPlot);

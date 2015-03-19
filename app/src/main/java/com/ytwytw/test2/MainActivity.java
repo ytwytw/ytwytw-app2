@@ -42,11 +42,12 @@ public class MainActivity extends Activity {
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
         // list the drawer items
-        ObjectDrawerItem[] drawerItem = new ObjectDrawerItem[3];
+        ObjectDrawerItem[] drawerItem = new ObjectDrawerItem[4];
 
-        drawerItem[0] = new ObjectDrawerItem(R.drawable.ic_action_copy, "Create");
-        drawerItem[1] = new ObjectDrawerItem(R.drawable.ic_action_refresh, "Read");
-        drawerItem[2] = new ObjectDrawerItem(R.drawable.ic_action_share, "Help");
+        drawerItem[0] = new ObjectDrawerItem(R.drawable.ic_action_copy, "Status");
+        drawerItem[1] = new ObjectDrawerItem(R.drawable.ic_action_refresh, "Data");
+        drawerItem[2] = new ObjectDrawerItem(R.drawable.ic_action_share, "Control");
+        drawerItem[3] = new ObjectDrawerItem(R.drawable.ic_action_refresh, "Graph");
 
         // Pass the folderData to our ListView adapter
         DrawerItemCustomAdapter adapter = new DrawerItemCustomAdapter(this, R.layout.listview_item_row, drawerItem);
@@ -146,13 +147,16 @@ public class MainActivity extends Activity {
 
         switch (position) {
             case 0:
-                fragment = new Fragment_Plot();
+                fragment = new Fragment_Status();
                 break;
             case 1:
-                fragment = new Fragment_Control();
+                fragment = new Fragment_List();
                 break;
             case 2:
-                fragment = new Fragment_List();
+                fragment = new Fragment_Control();
+                break;
+            case 3:
+                fragment = new Fragment_Plot();
                 break;
 
             default:

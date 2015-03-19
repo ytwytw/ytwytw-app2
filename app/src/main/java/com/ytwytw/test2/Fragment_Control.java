@@ -24,7 +24,7 @@ public class Fragment_Control extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.control, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_switch, container, false);
 
 
         final LinearLayout lm = (LinearLayout) rootView.findViewById(R.id.ll_Control11);

@@ -28,7 +28,7 @@ public class XYPlotActivity extends Activity
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                 WindowManager.LayoutParams.FLAG_SECURE);
 
-        setContentView(R.layout.simple_xy_plot);
+        setContentView(R.layout.fragment_plot);
 
         // initialize our XYPlot reference:
         plot = (XYPlot) findViewById(R.id.mySimpleXYPlot);
