@@ -146,13 +146,13 @@ public class MainActivity extends Activity {
 
         switch (position) {
             case 0:
-                fragment = new CreateFragment();
+                fragment = new Fragment_Plot();
                 break;
             case 1:
-                fragment = new ReadFragment();
+                fragment = new Fragment_Control();
                 break;
             case 2:
-                fragment = new HelpFragment();
+                fragment = new Fragment_List();
                 break;
 
             default:
