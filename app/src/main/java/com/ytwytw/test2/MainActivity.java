@@ -1,5 +1,8 @@
 package com.ytwytw.test2;
 
+        import android.content.ClipData;
+        import android.content.ComponentName;
+        import android.content.Intent;
         import android.os.Bundle;
         import android.app.Activity;
         import android.app.Fragment;
@@ -8,6 +11,7 @@ package com.ytwytw.test2;
         import android.support.v4.widget.DrawerLayout;
         import android.util.Log;
         import android.view.Menu;
+        import android.view.MenuInflater;
         import android.view.MenuItem;
         import android.view.View;
         import android.widget.AdapterView;
@@ -108,16 +112,33 @@ public class MainActivity extends Activity {
     }
 
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         // The action bar home/up action should open or close the drawer.
         // ActionBarDrawerToggle will take care of this.
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
+        if (mDrawerToggle.onOptionsItemSelected(item)) {return true;}
+
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                // newGame();
+                Intent intent1 = new Intent();
+                intent1.setClass(MainActivity.this,Setting.class);
+                startActivity(intent1);
+                return true;
+            case R.id.action_about:
+                 // showHelp();
+                Intent intent2 = new Intent();
+                intent2.setClass(MainActivity.this,About.class);
+                startActivity(intent2);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
 
-        return super.onOptionsItemSelected(item);
+        // return super.onOptionsItemSelected(item);
     }
 
     // to change up caret
