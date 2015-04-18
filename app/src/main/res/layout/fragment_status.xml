@@ -3,4 +3,131 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="System Status"
+            android:id="@+id/textView15"
+            android:textSize="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Good"
+            android:id="@+id/tv_status"
+            android:textSize="48dp"
+            android:layout_below="@+id/textView15"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel1_name"
+            android:id="@+id/tv_ch1"
+            android:layout_below="@+id/tv_status"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel2_name"
+            android:id="@+id/tv_ch2"
+            android:layout_below="@+id/tv_ch1"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel3_name"
+            android:id="@+id/tv_ch3"
+            android:layout_below="@+id/tv_ch2"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel4_name"
+            android:id="@+id/tv_ch4"
+            android:layout_below="@+id/tv_ch3"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/channel5_name"
+            android:id="@+id/tv_ch5"
+            android:layout_below="@+id/tv_ch4"
+            android:layout_alignParentStart="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/status_0"
+            android:id="@+id/tv_ch1_status"
+            android:layout_above="@+id/tv_ch2"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_alignStart="@+id/tv_ch2_status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/status_1"
+            android:id="@+id/tv_ch2_status"
+            android:layout_below="@+id/tv_ch1_status"
+            android:padding="5dp"
+            android:layout_toEndOf="@+id/tv_status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/status_2"
+            android:id="@+id/tv_ch3_status"
+            android:layout_below="@+id/tv_ch2_status"
+            android:layout_alignStart="@+id/tv_ch2_status"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/status_3"
+            android:id="@+id/tv_ch4_status"
+            android:padding="5dp"
+            android:layout_above="@+id/tv_ch5_status"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/tv_ch3_status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/status_4"
+            android:id="@+id/tv_ch5_status"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/tv_ch5"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/tv_ch4_status" />
+    </RelativeLayout>
 </LinearLayout>

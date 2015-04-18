@@ -38,6 +38,12 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
+    <string name="status_0">Power ON</string>
+    <string name="status_1">Power OFF</string>
+    <string name="status_2">Error</string>
+    <string name="status_3">Warning</string>
+    <string name="status_4">Offline</string>
+
 
     <drawable name="white">#ffffff</drawable>
     <drawable name="blue">#2554C7</drawable>
