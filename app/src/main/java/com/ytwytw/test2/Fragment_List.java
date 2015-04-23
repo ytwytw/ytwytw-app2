@@ -11,6 +11,7 @@ import android.widget.SimpleExpandableListAdapter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Random;
 
 public class Fragment_List extends Fragment{
 
@@ -70,24 +71,29 @@ public class Fragment_List extends Fragment{
 
             for( int n = 0 ; n < 6 ; n++ ) {
                 HashMap child = new HashMap();
+                Random random = new Random();
+                int rv = random.nextInt(125)%(125-100+1) + 100;
+                int rc = random.nextInt(30)%(30-1+1) + 1;
+                int p = rv * rc;
+
                 switch (n) {
                     case 0:
-                        child.put( "Sub Item", "        Voltage:    ");
+                        child.put( "Sub Item", "        Voltage(V):          "+rv);
                         break;
                     case 1:
-                        child.put( "Sub Item", "        Current:    ");
+                        child.put( "Sub Item", "        Current(A):          "+rc);
                         break;
                     case 2:
-                        child.put( "Sub Item", "        Power:      ");
+                        child.put( "Sub Item", "        Power(W):           "+p);
                         break;
                     case 3:
-                        child.put( "Sub Item", "        Frequency:  ");
+                        child.put( "Sub Item", "        Frequency(HZ):   60");
                         break;
                     case 4:
-                        child.put( "Sub Item", "        Duty Cycle: ");
+                        child.put( "Sub Item", "        Duty Cycle:          50");
                         break;
                     case 5:
-                        child.put( "Sub Item", "        Status: ");
+                        child.put( "Sub Item", "        Status:                 ON");
                         break;
 
                 }
